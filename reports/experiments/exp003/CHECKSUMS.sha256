@@ -1,0 +1,15 @@
+46966021d06e64abfd68e66617677d32cdf47da4a210180d8ed801f5a9778b7a  ../../../reports/tables/exp003_model_comparison_validation.csv
+b63afac53b2d703ce49e9849eed85d0378e227a81af7c99161b1c79657246462  ../../../reports/tables/exp003_reranking_tradeoff_validation.csv
+c6d487db2f06af232aa43df87b5430c04db618e683b9fc9b859ba78cf7277a60  ../../../reports/tables/exp003_exposure_distribution_validation.csv
+8d13be0a3d6b59a9db38d94ec2abdc352de545c6900fcb6fdbf2ba74efab2efd  ../../../reports/tables/exp003_activity_group_validation.csv
+13b8c574409487ff5cf15227d347b65abc894634e784af512e5e95e4aa529459  ../../../reports/tables/exp003_frozen_test_confirmation.csv
+82c2f5c8a28b760b6db6a2cb44126bac47819334e3b5031726d7c7fd068b1ed3  ../../../reports/tables/exp003_hypothesis_outcomes.csv
+db6913fa76360bda92aa9a6ef6bc40e7141a16a7153ece7b59e1d65103594fa5  ../../../reports/figures/exp003_ndcg_vs_long_tail.svg
+dcf8c8595d08a79059132f2679e9a2026d58adacb8fc1e501f17173861c47cd5  ../../../reports/figures/exp003_ndcg_vs_long_tail.png
+cfe4b761bfff1e385ce7783b5d6ad4c6b56f0c29ab3f762d9540534a9818b57d  ../../../reports/figures/exp003_ndcg_vs_ild.svg
+f8bbc3f6e706c942b59eca1dfb2e666f260a9ed4d002e5f971a203137407a289  ../../../reports/figures/exp003_ndcg_vs_ild.png
+cd95c8f794f934da634fe8b6ab58a51ff95187ea07a2bc21799ce42310f33a36  ../../../reports/figures/exp003_exposure_head_mid_tail.svg
+9630717a21ca14ffb20abd369b53823ff9b05bba685bac5b6eb0cb916c382970  ../../../reports/figures/exp003_exposure_head_mid_tail.png
+046adb3c0eaf146aa34410a8c55168d205ef6955a2253be305dd815af2fea4bb  ../../../reports/figures/exp003_gini_coverage_by_lambda.svg
+35ddc334fbf3456bc3ae7646d994ba7a4335d7b1a79e181a09e6bd6020ddc20f  ../../../reports/figures/exp003_gini_coverage_by_lambda.png
+2015148fba12d453f92fa275e01ee735e5460337fc32fa7cb8fd6e67aa0bb63c  manifest.json

@@ -1,0 +1,23 @@
+title = "Movie Recommender secret scanning"
+[extend]
+useDefault = true
+
+# Exact, reviewed fixture literals and public metric names only. No whole-directory exclusions.
+[[allowlists]]
+description = "Synthetic authentication fixtures and public experiment metric identifiers"
+condition = "AND"
+paths = [
+  '''^backend/tests/test_auth_api\.py$''',
+  '''^backend/tests/test_api_db_integration\.py$''',
+  '''^frontend/components/ExperimentDashboard\.tsx$''',
+  '''^ml/src/evaluation/exp001_decision_evaluator\.py$''',
+  '''^ml/src/evaluation/rerank_ablation_evaluator\.py$''',
+]
+regexTarget = "secret"
+regexes = [
+  '''^wrong-pass-123$''',
+  '''^test-002-integration-secret-with-sufficient-entropy$''',
+  '''^catalog_coverage_at_10$''',
+  '''^long_tail_exposure_at_10$''',
+  '''^exposure_gini_at_10$''',
+]

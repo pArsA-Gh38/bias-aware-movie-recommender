@@ -1,0 +1,41 @@
+# Local data, generated models, accounts and credentials
+.local/
+data/raw/
+data/processed/
+artifacts/
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.age
+*.bak
+# Dependencies and generated files
+.venv/
+node_modules/
+.next/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+coverage/
+*.tsbuildinfo
+*.log
+.coverage
+htmlcov/
+dist/
+# Editors
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+playwright-report/
+test-results/

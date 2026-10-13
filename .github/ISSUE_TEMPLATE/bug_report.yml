@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible application or developer-workflow problem.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include credentials, account data or exploitable security details. Use SECURITY.md for vulnerabilities."
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Include the commit, command or route, and a small non-sensitive example.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and relevant logs
+      description: OS, Python/uv, Node/npm; remove tokens, passwords, connection strings and personal data.

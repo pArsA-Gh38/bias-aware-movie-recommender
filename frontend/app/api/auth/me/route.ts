@@ -1,0 +1,5 @@
+import { backendFetch, proxyResponse } from "@/lib/server/backend";
+
+export async function GET() {
+  return proxyResponse(await backendFetch("/auth/me", {}, true));
+}

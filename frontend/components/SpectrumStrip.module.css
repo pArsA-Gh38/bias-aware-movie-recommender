@@ -1,0 +1,26 @@
+.strip {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 18px;
+}
+
+.chip {
+  display: block;
+  width: 26px;
+  height: 10px;
+  border-radius: 2px;
+  animation: pulse 3.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.55; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.35); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chip {
+    animation: none;
+    opacity: 0.85;
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "base_git_sha": "8d3d2e27b81676648b982bb3e0f656c6f8d36888",
+  "checksum_policy": "CHECKSUMS hashes every canonical CSV, SVG, PNG, and manifest; it does not hash itself.",
+  "identities": {
+    "activity_groups": {
+      "high": 421,
+      "low": 9,
+      "medium": 50
+    },
+    "configurations": [
+      "A0_L1",
+      "A1_L1",
+      "A1_L09",
+      "A1_L08",
+      "A1_L07",
+      "A1_L06",
+      "A2_L1",
+      "A2_L09",
+      "A2_L08",
+      "A2_L07",
+      "A2_L06",
+      "A3_L1",
+      "A3_L09",
+      "A3_L08",
+      "A3_L07",
+      "A3_L06"
+    ],
+    "metrics": [
+      "precision_at_10",
+      "recall_at_10",
+      "hit_rate_at_10",
+      "ndcg_at_10",
+      "catalog_coverage_at_10",
+      "novelty_at_10",
+      "ild_at_10",
+      "exposure_gini_at_10",
+      "long_tail_exposure_at_10"
+    ],
+    "models": [
+      "Popularity",
+      "ItemKNN-50",
+      "ItemKNN-100",
+      "ItemKNN-200",
+      "ALS-selected-seed42"
+    ]
+  },
+  "inputs": [
+    {
+      "bytes": 6315,
+      "path": "reports/experiments/exp003-prerequisite/model_comparison_validation_bootstrap_ci.csv",
+      "role": "model_comparison_bootstrap",
+      "sha256": "43191c420607bbcdcd77b6afa042b1e915be9d16a3d6b5b26d60eb1d1676f3c3"
+    },
+    {
+      "bytes": 1076,
+      "path": "reports/stability/als_three_seed_comparison_validation.csv",
+      "role": "als_selected_point_values",
+      "sha256": "591103bdfac60e9024b8272e06a6349e52988b20573fb2d249698d43f89bee44"
+    },
+    {
+      "bytes": 5573,
+      "path": "reports/statistics/metric004_overall_ci.csv",
+      "role": "als_confidence_intervals",
+      "sha256": "de25de5acba46e4ab7abb09ae48d0ca15806affebce33e70be7e0c877556d9e5"
+    },
+    {
+      "bytes": 2732,
+      "path": "reports/reranking/lambda_sweep_validation_summary.csv",
+      "role": "lambda_sweep_reconciliation",
+      "sha256": "bd91ce0662b314cff04026e767fea49cb0a2d529f89a9eb13bfec5a630eb7964"
+    },
+    {
+      "bytes": 6652,
+      "path": "reports/reranking/ablation/ablation_validation_summary.csv",
+      "role": "reranking_points",
+      "sha256": "8db8988b238f0b7854a7de5d28142ade8bfa5af72b3497c042a0855d21cb0316"
+    },
+    {
+      "bytes": 20115,
+      "path": "reports/reranking/ablation/ablation_overall_ci.csv",
+      "role": "reranking_confidence_intervals",
+      "sha256": "5def3c6b1dc0b0ac011eb1afa22123ece7c22038d92db33c68bccb68aabc4bda"
+    },
+    {
+      "bytes": 61568,
+      "path": "reports/reranking/ablation/ablation_activity_group_ci.csv",
+      "role": "activity_group_confidence_intervals",
+      "sha256": "24a2a79124da53cca0c03a6b461c75eb707f4bf44a401109ec84b94820d52e62"
+    },
+    {
+      "bytes": 18965843,
+      "path": "reports/reranking/ablation/ablation_validation_recommendations.csv",
+      "role": "displayed_slot_popularity_groups",
+      "sha256": "28c39ae6fce41dce11b2b539456c301098410ed0b313b1ff9752c1e5d2b4e6d6"
+    },
+    {
+      "bytes": 6781215,
+      "path": "reports/reranking/lambda_sweep_candidate_manifest.csv",
+      "role": "popularity_group_identity",
+      "sha256": "533b521fae36867a638c8ea0333157cea814511d1eb52329f2c47a7b0b5d7719"
+    },
+    {
+      "bytes": 16766,
+      "path": "reports/experiments/exp001/exp001_decision.json",
+      "role": "hypothesis_decisions",
+      "sha256": "66071770ec06bd69a51887f54f6e6adbf30cb0bb77bb2db4086b0d8c2766a3ff"
+    },
+    {
+      "bytes": 9362,
+      "path": "reports/experiments/exp002/canonical/result.json",
+      "role": "frozen_test_aggregates",
+      "sha256": "f6145dfde7712129a6dd0a0f2cdb70b675a915fe24b01a9eb8d35d08cfee8276"
+    },
+    {
+      "bytes": 23182,
+      "path": "reports/performance/perf002/v3/perf002_h4_benchmark.json",
+      "role": "h4_accepted_benchmark",
+      "sha256": "82ae6f2012a3645121a37d3ad44682fd7388467070fc3233d056db4d11449e3b"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 9717,
+      "path": "reports/tables/exp003_model_comparison_validation.csv",
+      "sha256": "46966021d06e64abfd68e66617677d32cdf47da4a210180d8ed801f5a9778b7a"
+    },
+    {
+      "bytes": 33190,
+      "path": "reports/tables/exp003_reranking_tradeoff_validation.csv",
+      "sha256": "b63afac53b2d703ce49e9849eed85d0378e227a81af7c99161b1c79657246462"
+    },
+    {
+      "bytes": 7524,
+      "path": "reports/tables/exp003_exposure_distribution_validation.csv",
+      "sha256": "c6d487db2f06af232aa43df87b5430c04db618e683b9fc9b859ba78cf7277a60"
+    },
+    {
+      "bytes": 89835,
+      "path": "reports/tables/exp003_activity_group_validation.csv",
+      "sha256": "8d13be0a3d6b59a9db38d94ec2abdc352de545c6900fcb6fdbf2ba74efab2efd"
+    },
+    {
+      "bytes": 5089,
+      "path": "reports/tables/exp003_frozen_test_confirmation.csv",
+      "sha256": "13b8c574409487ff5cf15227d347b65abc894634e784af512e5e95e4aa529459"
+    },
+    {
+      "bytes": 729,
+      "path": "reports/tables/exp003_hypothesis_outcomes.csv",
+      "sha256": "82c2f5c8a28b760b6db6a2cb44126bac47819334e3b5031726d7c7fd068b1ed3"
+    },
+    {
+      "bytes": 56049,
+      "path": "reports/figures/exp003_ndcg_vs_long_tail.svg",
+      "sha256": "db6913fa76360bda92aa9a6ef6bc40e7141a16a7153ece7b59e1d65103594fa5"
+    },
+    {
+      "bytes": 112052,
+      "path": "reports/figures/exp003_ndcg_vs_long_tail.png",
+      "sha256": "dcf8c8595d08a79059132f2679e9a2026d58adacb8fc1e501f17173861c47cd5"
+    },
+    {
+      "bytes": 54719,
+      "path": "reports/figures/exp003_ndcg_vs_ild.svg",
+      "sha256": "cfe4b761bfff1e385ce7783b5d6ad4c6b56f0c29ab3f762d9540534a9818b57d"
+    },
+    {
+      "bytes": 100890,
+      "path": "reports/figures/exp003_ndcg_vs_ild.png",
+      "sha256": "f8bbc3f6e706c942b59eca1dfb2e666f260a9ed4d002e5f971a203137407a289"
+    },
+    {
+      "bytes": 57155,
+      "path": "reports/figures/exp003_exposure_head_mid_tail.svg",
+      "sha256": "cd95c8f794f934da634fe8b6ab58a51ff95187ea07a2bc21799ce42310f33a36"
+    },
+    {
+      "bytes": 57111,
+      "path": "reports/figures/exp003_exposure_head_mid_tail.png",
+      "sha256": "9630717a21ca14ffb20abd369b53823ff9b05bba685bac5b6eb0cb916c382970"
+    },
+    {
+      "bytes": 65564,
+      "path": "reports/figures/exp003_gini_coverage_by_lambda.svg",
+      "sha256": "046adb3c0eaf146aa34410a8c55168d205ef6955a2253be305dd815af2fea4bb"
+    },
+    {
+      "bytes": 84186,
+      "path": "reports/figures/exp003_gini_coverage_by_lambda.png",
+      "sha256": "35ddc334fbf3456bc3ae7646d994ba7a4335d7b1a79e181a09e6bd6020ddc20f"
+    }
+  ],
+  "primary_keys": {
+    "activity": [
+      "configuration_key",
+      "activity_group",
+      "metric"
+    ],
+    "exposure": [
+      "configuration_key",
+      "popularity_group"
+    ],
+    "frozen_test": [
+      "configuration_key",
+      "metric"
+    ],
+    "hypotheses": [
+      "hypothesis"
+    ],
+    "model_comparison": [
+      "model",
+      "metric"
+    ],
+    "reranking": [
+      "configuration_key",
+      "metric"
+    ]
+  },
+  "protocol_id": "exp003-stored-evidence-publication-v1",
+  "reconciliation": {
+    "activity_rows": 432,
+    "als_exact_point_reconciliation": true,
+    "exposure_rows": 48,
+    "exposure_share_tolerance": 1e-15,
+    "hypothesis_rows": 4,
+    "long_tail_exact_reconciliation": true,
+    "model_rows": 45,
+    "reranking_rows": 144,
+    "test_rows": 27
+  },
+  "rendering": {
+    "backend": "Agg",
+    "dimensions_inches": {
+      "exposure": [
+        12,
+        5
+      ],
+      "panels": [
+        10,
+        4
+      ],
+      "scatter": [
+        7,
+        5
+      ]
+    },
+    "dpi": 120,
+    "font": "DejaVu Sans",
+    "svg_hashsalt": "EXP-003",
+    "unstable_metadata": false
+  },
+  "row_counts": {
+    "activity_rows": 432,
+    "als_exact_point_reconciliation": true,
+    "exposure_rows": 48,
+    "exposure_share_tolerance": 1e-15,
+    "hypothesis_rows": 4,
+    "long_tail_exact_reconciliation": true,
+    "model_rows": 45,
+    "reranking_rows": 144,
+    "test_rows": 27
+  },
+  "schema_version": 1,
+  "scientific_no_execution_counters": {
+    "bootstrap_execution_count": 0,
+    "model_fit_count": 0,
+    "recommendation_generation_count": 0,
+    "selection_count": 0,
+    "test_target_accessed": false
+  },
+  "scopes": {
+    "confirmatory_test": {
+      "fit": "train+validation",
+      "target": "test",
+      "users": 1114
+    },
+    "engineering": "H4 latency only",
+    "test_results_used_for_selection": false,
+    "validation": {
+      "fit": "train",
+      "target": "validation",
+      "users": 480
+    }
+  },
+  "task": "EXP-003"
+}

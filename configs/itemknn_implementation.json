@@ -1,0 +1,23 @@
+{
+  "model_name": "itemknn",
+  "algorithm": "binary_item_cosine",
+  "fit_scope": "train",
+  "positive_threshold": 4,
+  "similarity": "cosine",
+  "neighbor_count": 100,
+  "neighbor_tie_break": [
+    "similarity_desc",
+    "movie_id_asc"
+  ],
+  "candidate_score": "sum_neighbor_similarity",
+  "candidate_tie_break": [
+    "score_desc",
+    "movie_id_asc"
+  ],
+  "remove_self_neighbor": true,
+  "seen_filter": "all_ratings_at_or_before_train_cutoff",
+  "selection_status": "not_tuned",
+  "purpose": "MODEL-002 implementation smoke",
+  "stochastic": false,
+  "seed": null
+}

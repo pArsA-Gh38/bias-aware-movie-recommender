@@ -1,0 +1,5 @@
+hypothesis,scientific_outcome,engineering_acceptance,verdict,evidence_scope,reason,source_path
+H1,rejected,accepted_evidence,rejected,validation,No combined configuration satisfied all frozen H1 conditions.,reports/experiments/exp001/exp001_decision.json
+H2,accepted,accepted_evidence,accepted,validation,Qualifying configurations: A1_L07 and A1_L06.,reports/experiments/exp001/exp001_decision.json
+H3,not_evaluable,accepted_evidence,not evaluable,validation,H1 has no qualifying operating point.,reports/experiments/exp001/exp001_decision.json
+H4,accepted,PASS,accepted,engineering_cpu_latency,Primary pool 100 p95=7.43526535 ms <= 300 ms; pool-50 fallback not executed.,reports/performance/perf002/v3/perf002_h4_benchmark.json

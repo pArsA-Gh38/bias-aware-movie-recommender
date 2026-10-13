@@ -1,0 +1,91 @@
+"""Stable public API for shared deterministic recommender runtime behavior."""
+
+from recommender_core.artifact import (
+    ArtifactCompatibilityError,
+    ArtifactError,
+    ArtifactIntegrityError,
+    ServingBundle,
+    ServingRecommendation,
+    load_serving_bundle,
+)
+from recommender_core.artifact_v2 import (
+    ACCEPTED_CONFIGURATION_KEYS,
+    BUNDLE_ID_V2,
+    DEFAULT_CONFIGURATION_KEY,
+    FIT_ELIGIBILITY_MINIMUM,
+    FitEligibility,
+    FrozenServingConfiguration,
+    ItemMetadata,
+    ServingBundleV2,
+    load_serving_bundle_v2,
+)
+from recommender_core.fold_in import (
+    ALSFoldInConfig,
+    DuplicatePositiveInteraction,
+    EmptyPositiveInteractions,
+    FoldInEligibility,
+    FoldInError,
+    FoldInRecommendation,
+    FoldInResult,
+    InsufficientPositiveInteractions,
+    InvalidProfileItem,
+    UnknownProfileItem,
+    build_fold_in_confidence_row,
+    decide_fold_in_strategy,
+    fold_in_new_user,
+)
+from recommender_core.normalization import (
+    NormalizedRerankingFeatures,
+    min_max_normalize_candidate_feature,
+    normalize_reranking_features,
+)
+from recommender_core.reranking import RerankedItem, greedy_rerank
+from recommender_core.scoring import (
+    FactorRecommendation,
+    InsufficientCatalogItems,
+    RuntimeInferenceError,
+    rank_factor_items,
+)
+from recommender_core.serving import effective_beta, recommend_new_user
+
+__all__ = [
+    "ACCEPTED_CONFIGURATION_KEYS",
+    "BUNDLE_ID_V2",
+    "DEFAULT_CONFIGURATION_KEY",
+    "FIT_ELIGIBILITY_MINIMUM",
+    "ALSFoldInConfig",
+    "ArtifactCompatibilityError",
+    "ArtifactError",
+    "ArtifactIntegrityError",
+    "DuplicatePositiveInteraction",
+    "EmptyPositiveInteractions",
+    "FactorRecommendation",
+    "FitEligibility",
+    "FoldInEligibility",
+    "FoldInError",
+    "FoldInRecommendation",
+    "FoldInResult",
+    "FrozenServingConfiguration",
+    "InsufficientCatalogItems",
+    "InsufficientPositiveInteractions",
+    "InvalidProfileItem",
+    "ItemMetadata",
+    "NormalizedRerankingFeatures",
+    "RerankedItem",
+    "RuntimeInferenceError",
+    "ServingBundle",
+    "ServingBundleV2",
+    "ServingRecommendation",
+    "UnknownProfileItem",
+    "build_fold_in_confidence_row",
+    "decide_fold_in_strategy",
+    "effective_beta",
+    "fold_in_new_user",
+    "greedy_rerank",
+    "load_serving_bundle",
+    "load_serving_bundle_v2",
+    "min_max_normalize_candidate_feature",
+    "normalize_reranking_features",
+    "rank_factor_items",
+    "recommend_new_user",
+]

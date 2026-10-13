@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this repository and acknowledge MovieLens separately."
+type: software
+title: "Diversity- and Popularity-Bias-Aware Movie Recommender"
+authors:
+  - family-names: Ghadimi
+    given-names: Parsa
+repository-code: "https://github.com/pArsA-Gh38/bias-aware-movie-recommender"
+license: MIT
+abstract: >-
+  An undergraduate research prototype comparing Popularity, ItemKNN and implicit
+  ALS with genre-diversity and popularity-novelty reranking under a global
+  temporal evaluation protocol. The project includes a FastAPI backend,
+  Next.js frontend and a shared deterministic inference package.
